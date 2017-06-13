@@ -7,7 +7,7 @@ namespace JuegoConsola
         static void Main(string[] args)
         {
             Game game = new Game();
-            game.PalabraAdivinar = "whisky";
+            game.PalabraAdivinar = "probandooooo";
             game.jugar();
         }
     }

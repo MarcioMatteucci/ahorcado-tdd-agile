@@ -62,7 +62,7 @@ namespace Ahorcado.App
         }
 
         public bool contieneLetra (char letra)
-        {
+        {                   
             if (PalabraAdivinar.Contains(letra))
             {
                 return true;
