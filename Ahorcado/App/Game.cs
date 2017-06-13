@@ -8,7 +8,7 @@ namespace Ahorcado.App
 {
     public class Game
     {
-        public const int IntentosMax = 7;
+        public int IntentosMax { get; set;}
 
         public string PalabraAdivinar { get; set; }
 
@@ -18,7 +18,28 @@ namespace Ahorcado.App
 
         public Game()
         {
-        }        
+        }    
+        
+        public void setPalabraAdivinar(string palabraAdivinar)
+        {
+            PalabraAdivinar = palabraAdivinar;
+        }    
+
+        public void setIntentosMaximos(int intentosMaximos)
+        {
+            IntentosMax = intentosMaximos;
+        }
+
+        public void initIntentos()
+        {
+            Intentos = 0;
+        }
+
+        public void inicializar()
+        {
+            initIntentos();
+            initPalabraMostrada();
+        }
 
         public bool arriegaPalabra(string palabra)
         {
@@ -80,10 +101,32 @@ namespace Ahorcado.App
             }
         }
 
+        public bool quedanIntentos()
+        {
+            if (Intentos <= IntentosMax)
+            {
+                return true;
+            } else
+            {
+                return false;
+            }
+        }
+
+        public bool juegoGanado()
+        {
+            if (PalabraAdivinar.Equals(PalabraMostrada))
+            {
+                return true;
+            } else
+            {
+                return false;
+            }
+        }
+
         public void jugar()
         {
-            Intentos = 0;
-            initPalabraMostrada();
+            inicializar();
+            setIntentosMaximos(7);
             do
             {
                 Console.WriteLine("\nIntentos: " + Intentos);
@@ -91,7 +134,21 @@ namespace Ahorcado.App
                 Console.Write("Ingrese Letra: ");
                 char letra = Console.ReadKey().KeyChar;
                 ingresaLetra(letra);
-            } while (Intentos <= IntentosMax);
+            } while (!juegoGanado() && quedanIntentos());
+
+            Console.Clear();
+
+            if (juegoGanado())
+            {
+                Console.WriteLine("GANASTE !!!\n\n");
+            } else
+            {
+                Console.WriteLine("PERDISTE !!!");
+                Console.WriteLine("La palabra era: " + PalabraAdivinar);
+            }
+
+            Console.WriteLine("Pulse una tecla para salir...");
+            Console.ReadKey();     
         }
     }
 }

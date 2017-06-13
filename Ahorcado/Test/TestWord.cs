@@ -46,7 +46,6 @@ namespace Ahorcado.Test
             return word.palabraAcertada(palabra, letras);
         }        
         */
-        */
 
 
     }
