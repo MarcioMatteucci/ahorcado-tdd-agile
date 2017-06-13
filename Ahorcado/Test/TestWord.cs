@@ -12,6 +12,8 @@ namespace Ahorcado.Test
     [TestFixture]
     public class TestWord
     {
+        // Por ahora todo en la class Game
+        /*
         private Word word;
 
         [SetUp]
@@ -42,12 +44,9 @@ namespace Ahorcado.Test
         public bool Test_palabraAcertada(string palabra, ArrayList letras)
         {
             return word.palabraAcertada(palabra, letras);
-        }
-
-
-        /*
+        }        
         */
-
+        */
 
 
     }

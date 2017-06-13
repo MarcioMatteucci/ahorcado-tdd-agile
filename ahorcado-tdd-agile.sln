@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ahorcado", "Ahorcado\Ahorcado.csproj", "{6962C5D8-E5D4-416F-AC6C-A2A17C412EC9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JuegoConsola", "JuegoConsola\JuegoConsola.csproj", "{315CC078-67D1-4E43-BB39-46622AAAD9A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6962C5D8-E5D4-416F-AC6C-A2A17C412EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6962C5D8-E5D4-416F-AC6C-A2A17C412EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6962C5D8-E5D4-416F-AC6C-A2A17C412EC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{315CC078-67D1-4E43-BB39-46622AAAD9A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{315CC078-67D1-4E43-BB39-46622AAAD9A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{315CC078-67D1-4E43-BB39-46622AAAD9A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{315CC078-67D1-4E43-BB39-46622AAAD9A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

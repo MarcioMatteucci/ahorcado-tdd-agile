@@ -10,6 +10,8 @@ namespace Ahorcado.App
 
     public class Word
     {
+        // Por ahora todo en la class Game
+        /*
         ArrayList letrasUsadas = new ArrayList();
 
         public string PalabraAdivinar { get; set; }
@@ -54,5 +56,6 @@ namespace Ahorcado.App
                 return false;
             }
         }
+        */
     }
 }
